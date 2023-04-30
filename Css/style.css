@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fjalla+One&family=Lato:ital@1&family=Truculenta&family=Yanone+Kaffeesatz&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ font-family: "Laila", sans-serif;
+ background-color: #F1F1F1;
+}
+
+/*Navigation Styling*/
+nav {
+  width: 99%;
+  position:fixed;
+  z-index: 1;
+  padding: 1.5rem .5rem;
+  display:flex;
+  justify-content:space-between;
+  background-color: rgb(18, 0, 85);
+  color: rgb(255, 255, 255);
+  font-family: "Akaya Telivigala", cursive;
+  box-shadow: 0px 4px 8px 0px #bdbdbd;
+  font-size: 22px;
+}
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+nav a:focus {
+  color: rgb(255, 137, 3);
+  
+}
+nav a:hover {
+  padding-bottom: 6px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+nav ul {
+  display: flex;
+  gap: 0.5rem;
+}
+nav ul li {
+  list-style-type: none;
+  margin: 8px;
+}
+
+/* Landing Section Styling */
+#Hero {
+  padding: 120px 0;
+  text-align: center;
+  background: url(../images/Landing-img.jpg) no-repeat center center/cover;
+  opacity:0.94;
+  color: rgb(255, 255, 255);
+  font-family: "Laila", sans-serif;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+}
+
+#Hero img {
+  max-width: 200px;
+  border-radius: 100px 100px 100px 2px;
+  opacity: 1;
+}
+
+#Hero h2 {
+  font-weight: bold;
+}
+
+#Hero p {
+  font-size: 18px;
+  padding-top: 8px;
+  font-weight: bold;
+  opacity: 1;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  margin-top: 16px;
+  border: 1px solid black;
+  border-radius: 1em;
+}
+
+.button a:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  margin-top: 16px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1em;
+}
+
+/*About Me styling */
+#about h2 {
+  background-color: black;
+  color: ghostwhite;
+  text-align: center;
+}
+
+.about-card {
+  margin: auto;
+  margin: 0px 20px;
+  padding: 30px;
+  margin-top: 8px;
+  background-color: rgb(252, 252, 252);
+  text-align: justify;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-card img {
+  width: 250px;  
+}
+
+/* SKill Section Styling */
+
+#skill h2 {
+  color: black;
+  text-align: center;
+}
+.skills-grid >ul{
+  list-style-type:circle;
+ 
+  margin-left: 120px;
+  text-align: center;
+  
+}
+
+/* Project section styling */
+#project h2 {
+  background-color: black;
+  color: ghostwhite;
+  text-align: center;
+}
+
+.project-card {
+  margin: auto;
+  border: 1px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+
+}
+
+.project-container {
+  position: relative;
+  width: 50%;
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #dbf2fa;
+  opacity: 0.98;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  display: block;
+}
+
+.project-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: rgb(50, 2, 59);
+  font-size: 14px;
+  position: absolute;
+ top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text a {
+  margin: 10px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 8px;
+  border-radius: 6px;
+}
+
+/* Contact section styling */
+#contact h2 {
+  background-color: black;
+  color: ghostwhite;
+  text-align: center;
+}
+.contact-card{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+
+}
+.contact-card input,textarea{
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+
+input[type="submit"]{
+  width:30%;
+  background-color: rgb(14, 52, 158);
+  padding: 12px;
+  border-radius: 1em;
+  color:white;
+}
+
+.contact-card i{
+  position: absolute;
+}
+
+/* Footer styling */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+.fa-brands{
+  margin:10px;
+  text-decoration: none;
+  color:black;
+ 
+}
+.fa-brands:hover{
+  
+  color:rgb(109, 0, 0);
+}
