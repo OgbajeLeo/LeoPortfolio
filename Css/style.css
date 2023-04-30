@@ -1,39 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Fjalla+One&family=Lato:ital@1&family=Truculenta&family=Yanone+Kaffeesatz&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Laila&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 body {
- font-family: "Laila", sans-serif;
- background-color: #F1F1F1;
+  font-family: "Laila", sans-serif;
+  background-color: #F1F1F1;
 }
 
 /*Navigation Styling*/
 nav {
   width: 99%;
-  position:fixed;
+  position: fixed;
   z-index: 1;
   padding: 1.5rem .5rem;
-  display:flex;
-  justify-content:space-between;
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(18, 0, 85);
   color: rgb(255, 255, 255);
   font-family: "Akaya Telivigala", cursive;
   box-shadow: 0px 4px 8px 0px #bdbdbd;
   font-size: 22px;
 }
+
 nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
 nav a:focus {
   color: rgb(255, 137, 3);
-  
+
 }
+
 nav a:hover {
+  font-size: larger;
   padding-bottom: 6px;
   border-bottom: 2px solid rgb(255, 255, 255);
 }
@@ -42,6 +46,7 @@ nav ul {
   display: flex;
   gap: 0.5rem;
 }
+
 nav ul li {
   list-style-type: none;
   margin: 8px;
@@ -52,7 +57,7 @@ nav ul li {
   padding: 120px 0;
   text-align: center;
   background: url(../images/Landing-img.jpg) no-repeat center center/cover;
-  opacity:0.94;
+  opacity: 0.94;
   color: rgb(255, 255, 255);
   font-family: "Laila", sans-serif;
   background-attachment: fixed;
@@ -68,6 +73,7 @@ nav ul li {
 
 #Hero h2 {
   font-weight: bold;
+  font-size: 40px;
 }
 
 #Hero p {
@@ -95,11 +101,12 @@ nav ul li {
   margin-top: 16px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 1em;
+  font-size: larger;
 }
 
 /*About Me styling */
 #about h2 {
-  background-color: black;
+  background-color: rgb(18, 0, 85);
   color: ghostwhite;
   text-align: center;
 }
@@ -115,26 +122,19 @@ nav ul li {
 }
 
 .about-card img {
-  width: 250px;  
+  width: 250px;
+  align-content: center;
+
 }
 
-/* SKill Section Styling */
+.skills-grid>ul {
+  margin-left: 10px;
 
-#skill h2 {
-  color: black;
-  text-align: center;
-}
-.skills-grid >ul{
-  list-style-type:circle;
- 
-  margin-left: 120px;
-  text-align: center;
-  
 }
 
 /* Project section styling */
 #project h2 {
-  background-color: black;
+  background-color: rgb(18, 0, 85);
   color: ghostwhite;
   text-align: center;
 }
@@ -184,7 +184,7 @@ nav ul li {
   color: rgb(50, 2, 59);
   font-size: 14px;
   position: absolute;
- top: 20%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -202,32 +202,35 @@ nav ul li {
 
 /* Contact section styling */
 #contact h2 {
-  background-color: black;
+  background-color: rgb(18, 0, 85);
   color: ghostwhite;
   text-align: center;
 }
-.contact-card{
+
+.contact-card {
   margin: auto;
   width: 100%;
   text-align: center;
 
 }
-.contact-card input,textarea{
+
+.contact-card input,
+textarea {
   width: 80%;
   padding: 10px;
   margin-top: 5px;
 }
 
 
-input[type="submit"]{
-  width:30%;
-  background-color: rgb(14, 52, 158);
+input[type="submit"] {
+  width: 30%;
+  background-color: rgb(18, 0, 85);
   padding: 12px;
   border-radius: 1em;
-  color:white;
+  color: white;
 }
 
-.contact-card i{
+.contact-card i {
   position: absolute;
 }
 
@@ -238,13 +241,15 @@ footer {
   background: #ddd;
   margin-top: 20px;
 }
-.fa-brands{
-  margin:10px;
+
+.fa-brands {
+  margin: 10px;
   text-decoration: none;
-  color:black;
- 
+  color: black;
+
 }
-.fa-brands:hover{
-  
-  color:rgb(109, 0, 0);
+
+.fa-brands:hover {
+  size: 2em;
+  color: rgb(109, 0, 0);
 }
